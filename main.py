@@ -10,4 +10,7 @@ st.subheader('Intro to dashboard with python')
 st.write('''Benvenuti in''')
 
 st.write(df)
-st.linechart(df)
+st.line_chart(df)
+
+CSlider = st.slider('Celcius')
+st.write(CSlider, 'in Fahrenheit is: ', CSlider *9 /5 + 32)
